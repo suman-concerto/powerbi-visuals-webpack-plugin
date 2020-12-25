@@ -24,6 +24,8 @@ if (typeof powerbi !== "undefined") {
     powerbi.visuals = powerbi.visuals || {};
     powerbi.visuals.plugins = powerbi.visuals.plugins || {};
     powerbi.visuals.plugins["<%= pluginName %>"] = <%= pluginName %>;
+} else {
+	<%= pluginName %>.create();
 }
 
 export default <%= pluginName %>;
